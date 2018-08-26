@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Example</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Categoria</legend>
+            <fieldset>
+                <legend>Personal</legend>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="date">Date of Birth</label>
+                <input type="date" name="date" id="date" min="1998-01-01" max="2226-01-01" pattern="[0-9]{2}-[0-9]{2}-[0-9]{4}" required>
+                <label for="animal">Animal</label>
+                <select name="animal" id="anima">
+                    <option value="Tiger">Tiger</option>
+                    <option value="Bear">Bear</option>
+                    <option value="Dove">Dove</option>
+                </select>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Account</legend>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="a.b@c.com" required>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required>
+                <label for="verify">Verify Password</label>
+                <input type="verify" name="verify" id="verify" required>
+            </fieldset>
+            <fieldset>
+                <legend>Contact</legend>
+                <label for="address">Address</label>
+                <textarea name="address" id="address" columns="50" rows="10" required></textarea>
+                <label for="city">City</label>
+                <select name="city" id="city">
+                    <option value="ss">San Salvador</option>
+                    <option value="us">Usulutan</option>
+                    <option value="la">La Union</option>
+                </select>
+                <label for="Country">Country</label>
+                <select name="country" id="country">
+                    <option value="us">United States</option>
+                    <option value="sv">El Salvador</option>
+                    <option value="eg">Egypt</option>
+                </select>
+                <label for="phone">Phone Number</label><input type="tel" pattern="[0-9]{4}-[0-9]{4}" placeholder="1111-1111" required>
+            </fieldset>
+        </fieldset>
+        <button type="submit">Submit</button>
+    </form> 
+</body>
+</html>
